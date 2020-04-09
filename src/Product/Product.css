@@ -1,0 +1,7 @@
+.product__button-remove:hover {
+  color: #f00;
+}
+
+.image {
+  max-width: 70px;
+}

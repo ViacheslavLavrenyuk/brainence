@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.form > .input {
+  margin: 10px;
+}
+
+.form > .button {
+  margin: 10px;
+}

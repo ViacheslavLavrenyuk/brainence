@@ -1,0 +1,9 @@
+.table {
+  width: 60%;
+  overflow-x: hidden;
+  margin: 20px auto;
+}
+
+.table > .MuiTableContainer-root {
+  overflow-x: hidden;
+}
