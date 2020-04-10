@@ -6,15 +6,7 @@ import {
 } from './constants';
 
 const initialState = {
-  products: [
-    {
-      id: 1,
-      image: 'https://via.placeholder.com/150/92c952',
-      name: 'Product 1',
-      description: 'accusamus beatae ad facilis cum similique qui sunt',
-      price: 254,
-    },
-  ],
+  products: [],
 };
 
 const reduser = (state = initialState, action) => {
@@ -28,8 +20,8 @@ const reduser = (state = initialState, action) => {
     case ADD_PRODUCT:
       return {
         products: [
-          action.product,
           ...state.products,
+          action.product,
         ],
       };
     case PIN_PRODUCT:

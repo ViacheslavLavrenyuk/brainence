@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import uuid from 'react-uuid';
-import { addProduct } from '../actionCreators';
+import PropTypes from 'prop-types';
+import { addProduct } from '../../actionCreators';
 import './Form.css';
 
 const Form = ({ onAddProduct }) => {
@@ -33,7 +34,9 @@ const Form = ({ onAddProduct }) => {
   const handleInputProductPrice = ({ target }) => {
     const { value } = target;
 
-    setPrice(value);
+    if (Number(value)) {
+      setPrice(Number(value));
+    }
   };
 
   const handleAddProduct = (event) => {
@@ -103,3 +106,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(null, mapDispatchToProps)(Form);
+
+Form.propTypes = {
+  onAddProduct: PropTypes.func.isRequired,
+};

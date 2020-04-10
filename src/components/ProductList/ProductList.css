@@ -1,5 +1,6 @@
 .table {
   width: 60%;
+  min-width: 700px;
   overflow-x: hidden;
   margin: 20px auto;
 }
