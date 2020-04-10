@@ -1,0 +1,2 @@
+.form{display:flex;justify-content:space-around;flex-wrap:wrap;margin:20px}.form>.button,.form>.input{margin:10px}.product__button-remove:hover{color:red}.image{max-width:70px}.table{width:60%;min-width:700px;margin:20px auto}.table,.table>.MuiTableContainer-root{overflow-x:hidden}body{margin:0}.app{text-align:center}.text{font-family:Arial,Helvetica,sans-serif;font-size:16px}.product__button{font-weight:600;cursor:pointer;border:none;background-color:transparent;outline:none;transition:.2s}
+/*# sourceMappingURL=main.e56b8b11.chunk.css.map */
